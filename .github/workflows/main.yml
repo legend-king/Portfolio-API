@@ -25,6 +25,5 @@ jobs:
 
       - name: executing remote ssh commands using password
         run: |
-          sudo apt-get install sshpass
           sshpass -p ${{ secrets.PASSWORD }} ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }}
           whoami
