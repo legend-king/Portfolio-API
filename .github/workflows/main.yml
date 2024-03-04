@@ -31,4 +31,9 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
-            whoami
+            cd /home/mustafa/PortfolioWebsite/Portfolio-API
+            git pull
+            source venv/bin/activate
+            pip install -r requirements.txt
+            python3 manage.py migrate
+            pm2 restart PortfolioWebsite
