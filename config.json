@@ -1,0 +1,12 @@
+{       
+   apps:            
+      [{
+        name: "Portfolio Website",          
+        script: "manage.py",
+        args: ["runserver", "0.0.0.0:4003"], 
+        exec_mode: "fork", 
+        instances: "1", 
+        wait_ready: true, 
+        interpreter : "python3" 
+      }] 
+}
