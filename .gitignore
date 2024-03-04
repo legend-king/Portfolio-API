@@ -10,6 +10,7 @@ env/
 myenv/
 .env/
 script.sh
+db.sqlite3
 
 # IDE-specific files
 .vscode/
