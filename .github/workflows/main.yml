@@ -31,7 +31,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
-            cd /home/mustafa/PortfolioWebsite/Portfolio-API
+            cd /home/${{ secrets.USERNAME }}/PortfolioWebsite/Portfolio-API
             git pull
             source venv/bin/activate
             pip install -r requirements.txt
